@@ -19,18 +19,18 @@
                 </button>
                 @Html.ActionLink("ShopCart.in", "CreateCategory", "Admin", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+            @*<div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav"></ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    @*<li>
                         @if (Session["UserId"] == null)
                         {
 
                             @Html.ActionLink("Sign In", "login", "Account")
 
                         }
-                    </li>
-                    @if (User.Identity.IsAuthenticated)
+                    </li>*@
+                    @*@if (User.Identity.IsAuthenticated)
                     {
 
                         <li><a>Dear - @User.Identity.Name</a></li>
@@ -38,7 +38,7 @@
                         <li>
                             @if (Session["UserId"] == null)
                             {
-                                @Html.ActionLink("Sign In", "Signup", "Account")
+                                @Html.ActionLink("Sign In", "login", "Account")
                             }
                             else
                             {
@@ -47,7 +47,7 @@
 
                         <li>
                     </ul>
-            </div>
+            </div>*@
         </div>
     </div>
 
