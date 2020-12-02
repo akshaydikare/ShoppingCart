@@ -59,6 +59,7 @@ namespace ShoppingCart.Web.Controllers
             public ActionResult Logout()
             {
                 FormsAuthentication.SignOut();
+                Session.Abandon();
                 return RedirectToAction("Login");
             }
         }
