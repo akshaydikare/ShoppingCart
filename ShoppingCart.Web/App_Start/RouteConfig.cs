@@ -16,7 +16,7 @@ namespace ShoppingCart.Web
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Admin", action = "ViewCategory", id = UrlParameter.Optional }
+                defaults: new { controller = "Admin", action = "CreateCategory", id = UrlParameter.Optional }
             );
         }
     }
